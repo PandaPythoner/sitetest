@@ -1,0 +1,36 @@
+
+.messages {
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.alena_messages {
+    background-color: #1EB5FF;
+}
+
+.your_messages {
+    background-color: #3CFF00;
+}
+
+#chat {
+    position: absolute;
+    width:99%;
+    height: 90%;
+    bottom: 7%;
+    overflow-x: auto;
+}
+
+.ask {
+    position: absolute;
+    bottom: 1%;
+    height: 5%;
+    width: 99%;
+}
+
+#inputtext {
+    width: 90%;
+}
+
+#send {
+    width: 8%;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" type="image/ico" href={% static 'alena/favicon.ico' %}/>
+        <link rel="stylesheet" type="text/css" href={% static "alena/alena.css" %}>
+        <script src = {% static "alena/alena.js" %}></script>
+        <script src = {% static "static_jquery/js/jquery.js" %}></script>
+    </head>
+    <body>
+        <div id="chat">
+            <div class = 'messages alena_messages' align = 'left'>
+                <font size = '5'>{{ alena_says }}</font> <br/>
+                <font size = '1'>Алёна</font>
+            </div>
+        </div>
+        <div class='ask'>
+            <input id = 'inputtext' type="text">
+            <input id = 'send' type="button" value="SEND!" onclick="ask_alena();">
+        </div>
+    </body>
+</html>
